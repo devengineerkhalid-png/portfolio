@@ -5,8 +5,9 @@ export const PERSONAL_INFO = {
   name: "Muhammad Khalid",
   title: "DevOps / DevSecOps Engineer",
   location: "Islamabad",
-  email: "softengr.ks@gmail.com",
+  email: "dev.engineerkhalid@gmail.com",
   linkedin: "https://www.linkedin.com/in/engr-muhammad-khalid-675a61266/",
+  fiverr: "https://www.fiverr.com/sellers/techkhalid_",
   tagline: "Architecting resilient, secure, and cost-optimized cloud infrastructure.",
   summary: "Highly skilled DevOps/DevSecOps Engineer with a focus on AWS architecture and automation. Expert at reducing cloud costs (30–50%) and implementing robust CI/CD pipelines. Lead Engineer for complex POS deployments and cloud migrations."
 };
@@ -33,23 +34,24 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const PROJECTS: Project[] = [
   {
     id: "phi-pos-platform",
-    title: "Phi POS - Smart Retail",
-    description: "A professional, high-performance point-of-sale system designed for modern retail environments.",
-    problem: "Retailers needed a secure, reliable, and fast checkout solution with modern workspace management.",
-    solution: "Led the DevOps strategy for a secure deployment pipeline. Engineered a cloud-synced architecture ensuring sub-second transaction times and data integrity.",
-    impact: "Successful launch of v1.0.0 with 99.9% availability and streamlined store operations for multiple vendors.",
-    tags: ["Secure", "Fast", "Reliable", "Cloud-Native"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop"
+    title: "Phi POS",
+    description: "Smart point-of-sale for modern stores. A high-performance, secure checkout ecosystem.",
+    problem: "Modern retailers required a workspace that is fast to prepare, secure by default, and reliable under heavy transaction loads.",
+    solution: "Engineered a containerized deployment strategy with automated 'workspace preparation' scripts. Implemented a blue-green deployment model to ensure zero-downtime during v1.0.0 rollout.",
+    impact: "Achieved sub-second transaction processing and 100% data integrity for multi-vendor retail environments.",
+    tags: ["Secure", "Fast", "Reliable"],
+    image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop"
   },
   {
     id: "naxi-optimization",
     title: "Naxi E-commerce Cloud",
-    description: "Cloud architecture and cost optimization for a high-scale dropshipping and e-commerce platform.",
-    problem: "Scaling issues during flash sales and high AWS overhead for a platform with thousands of dynamic product pages.",
-    solution: "Serverless migration using AWS App Runner and aggressive edge caching with CloudFront. Automated image optimization pipelines via S3 triggers.",
-    impact: "50% monthly cost reduction and 40% faster page loads for global customers.",
-    tags: ["AWS", "E-commerce", "S3+CloudFront", "Scalability"],
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1200&auto=format&fit=crop"
+    description: "Start E-commerce with Naxi from today. A platform providing everything needed to start selling and reach customers everywhere.",
+    problem: "Scaling dropshipping operations globally while maintaining low latency and high availability for thousands of SKUs.",
+    solution: "Architected the Naxi 360 ecosystem on AWS, utilizing App Runner for microservices and CloudFront for global content delivery. Automated dropshipping sync pipelines.",
+    impact: "Successfully launched a multi-tenant platform with integrated dropshipping support, reaching customers everywhere with optimized performance.",
+    tags: ["E-commerce", "Naxi 360", "Dropshipping", "AWS"],
+    link: "https://naxi.ae",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
   },
   {
     id: "blockchain-storage",

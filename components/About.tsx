@@ -16,7 +16,7 @@ const About: React.FC = () => {
             <p className="text-slate-400 leading-relaxed text-xl font-light">
               {PERSONAL_INFO.summary}
             </p>
-            <div className="p-6 glass border-l-4 border-blue-500 rounded-r-2xl italic text-slate-300 text-lg">
+            <div className="p-6 glass border-l-4 border-violet-500 rounded-r-2xl italic text-slate-300 text-lg shadow-lg shadow-violet-500/5">
               "If it needs to be done twice, it needs to be automated. If it needs to be reliable, it needs to be code."
             </div>
           </div>
@@ -34,7 +34,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                whileHover={{ y: -5, borderColor: "rgba(59, 130, 246, 0.4)" }}
+                whileHover={{ y: -5, borderColor: "rgba(139, 92, 246, 0.4)" }}
                 className="p-6 rounded-2xl glass transition-all"
               >
                 <h4 className="text-white font-black text-sm mb-2 uppercase tracking-widest">{item.label}</h4>
@@ -64,13 +64,13 @@ const About: React.FC = () => {
           </motion.div>
           
           {/* Decorative background cards */}
-          <div className="absolute -top-10 -left-10 w-full h-full bg-blue-600/5 rounded-[2.5rem] -z-10 rotate-3"></div>
-          <div className="absolute -bottom-10 -right-10 w-full h-full bg-emerald-600/5 rounded-[2.5rem] -z-10 -rotate-3"></div>
+          <div className="absolute -top-10 -left-10 w-full h-full bg-violet-600/5 rounded-[2.5rem] -z-10 rotate-3"></div>
+          <div className="absolute -bottom-10 -right-10 w-full h-full bg-cyan-600/5 rounded-[2.5rem] -z-10 -rotate-3"></div>
           
           <motion.div 
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
-            className="absolute -bottom-8 -right-8 p-8 glass rounded-3xl border-blue-500/20 shadow-2xl z-20 hidden lg:block"
+            className="absolute -bottom-8 -right-8 p-8 glass rounded-3xl border-violet-500/20 shadow-2xl z-20 hidden lg:block"
           >
             <div className="flex items-center space-x-4">
               <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>

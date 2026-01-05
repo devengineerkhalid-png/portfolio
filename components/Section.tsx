@@ -21,7 +21,7 @@ const Section: React.FC<SectionProps> = ({ id, title, subtitle, children, classN
         className="mb-12"
       >
         <div className="flex items-center space-x-4 mb-4">
-          <span className="text-blue-500 font-mono text-xl">#</span>
+          <span className="text-violet-500 font-mono text-xl">#</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
             {title}
           </h2>

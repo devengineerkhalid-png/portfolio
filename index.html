@@ -16,8 +16,10 @@
     
     <style>
       :root {
-        --blue-500: #3b82f6;
-        --emerald-500: #10b981;
+        --primary: #8b5cf6; /* Violet-500 */
+        --secondary: #0ea5e9; /* Cyan-500 */
+        --accent: #f59e0b; /* Amber-500 */
+        --success: #10b981; /* Emerald-500 */
       }
       body {
         font-family: 'Inter', sans-serif;
@@ -28,20 +30,26 @@
       
       /* Grid Pattern Background */
       .bg-grid {
-        background-image: radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.05) 1px, transparent 0);
+        background-image: radial-gradient(circle at 1px 1px, rgba(139, 92, 246, 0.07) 1px, transparent 0);
         background-size: 40px 40px;
       }
 
       .glass {
         background: rgba(15, 23, 42, 0.7);
         backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(139, 92, 246, 0.1);
       }
 
       ::-webkit-scrollbar { width: 6px; }
       ::-webkit-scrollbar-track { background: #020617; }
-      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
-      ::-webkit-scrollbar-thumb:hover { background: #334155; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+      ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     </style>
   <script type="importmap">
 {
@@ -56,7 +64,7 @@
 }
 </script>
 </head>
-  <body class="bg-slate-950 text-slate-200 antialiased selection:bg-blue-500/30">
+  <body class="bg-slate-950 text-slate-200 antialiased selection:bg-violet-500/30">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

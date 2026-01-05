@@ -23,10 +23,10 @@ const Experience: React.FC = () => {
             >
               <div className={`md:flex items-center justify-between ${idx % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                 {/* Dot */}
-                <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-slate-900 border border-blue-500 -translate-x-1/2 md:-translate-y-1/2 z-10"></div>
+                <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-slate-900 border border-violet-500 -translate-x-1/2 md:-translate-y-1/2 z-10"></div>
                 
                 <div className={`w-full md:w-[45%] p-8 glass rounded-2xl border border-slate-800/50 shadow-lg ${idx % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                  <span className="text-[10px] font-mono font-bold text-blue-500 mb-4 block uppercase tracking-widest">
+                  <span className="text-[10px] font-mono font-bold text-violet-500 mb-4 block uppercase tracking-widest">
                     {exp.period}
                   </span>
                   <h3 className="text-2xl font-bold text-white mb-1">
@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
                   <ul className="space-y-3 text-slate-400 text-base font-light leading-relaxed">
                     {exp.description.map((item, i) => (
                       <li key={i} className={`flex items-start ${idx % 2 === 0 ? 'flex-row-reverse' : ''}`}>
-                        <span className={`text-blue-500/50 mt-1.5 flex-shrink-0 ${idx % 2 === 0 ? 'ml-3' : 'mr-3'}`}>•</span>
+                        <span className={`text-violet-500/50 mt-1.5 flex-shrink-0 ${idx % 2 === 0 ? 'ml-3' : 'mr-3'}`}>•</span>
                         {item}
                       </li>
                     ))}

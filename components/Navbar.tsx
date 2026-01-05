@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             className="text-xl font-black text-white font-mono tracking-tighter"
           >
-            KHALID<span className="text-blue-500">_</span>
+            KHALID<span className="text-violet-500">_</span>
           </motion.a>
 
           {/* Desktop Nav */}
@@ -44,14 +44,14 @@ const Navbar: React.FC = () => {
                 className="group relative text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href={`mailto:${PERSONAL_INFO.email}`}
-              className="px-6 py-2.5 bg-white text-slate-950 rounded-full text-xs font-black uppercase tracking-widest hover:bg-blue-500 hover:text-white transition-all shadow-lg"
+              className="px-6 py-2.5 bg-violet-600 text-white rounded-full text-xs font-black uppercase tracking-widest hover:bg-cyan-500 transition-all shadow-lg shadow-violet-500/20"
             >
               Initialize
             </motion.a>
@@ -80,14 +80,14 @@ const Navbar: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-x-6 top-24 z-40 md:hidden glass p-10 rounded-3xl border border-blue-500/20 shadow-2xl"
+            className="fixed inset-x-6 top-24 z-40 md:hidden glass p-10 rounded-3xl border border-violet-500/20 shadow-2xl"
           >
             <div className="flex flex-col space-y-8 items-center">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-lg font-bold uppercase tracking-[0.2em] text-slate-300 hover:text-blue-400 transition-colors"
+                  className="text-lg font-bold uppercase tracking-[0.2em] text-slate-300 hover:text-violet-400 transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
               ))}
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
-                className="w-full text-center px-8 py-4 bg-blue-600 text-white rounded-xl text-sm font-black uppercase tracking-widest"
+                className="w-full text-center px-8 py-4 bg-violet-600 text-white rounded-xl text-sm font-black uppercase tracking-widest"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Send Transmission

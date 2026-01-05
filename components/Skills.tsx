@@ -10,11 +10,11 @@ const Skills: React.FC = () => {
         {SKILL_CATEGORIES.map((category) => (
           <div 
             key={category.title}
-            className="p-8 glass rounded-xl border border-slate-800/50 hover:border-slate-700 transition-colors"
+            className="p-8 glass rounded-xl border border-slate-800/50 hover:border-violet-500/30 transition-colors"
           >
             <div className="mb-6">
-              <h3 className="text-xs font-mono font-bold text-blue-400 uppercase tracking-widest flex items-center">
-                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
+              <h3 className="text-xs font-mono font-bold text-violet-400 uppercase tracking-widest flex items-center">
+                <span className="w-1.5 h-1.5 bg-violet-500 rounded-full mr-3"></span>
                 {category.title}
               </h3>
             </div>
@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
               {category.skills.map((skill) => (
                 <span 
                   key={skill} 
-                  className="px-2.5 py-1.5 bg-slate-900/50 text-slate-400 text-[10px] font-mono border border-slate-800 rounded transition-colors hover:text-white"
+                  className="px-2.5 py-1.5 bg-slate-900/50 text-slate-400 text-[10px] font-mono border border-slate-800 rounded transition-colors hover:text-white hover:border-violet-500/50"
                 >
                   {skill}
                 </span>

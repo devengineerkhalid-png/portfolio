@@ -7,8 +7,8 @@ const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 overflow-hidden relative">
       {/* Static Background Blurs */}
-      <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-blue-600 opacity-[0.05] rounded-full blur-[150px] -z-10"></div>
-      <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-emerald-600 opacity-[0.05] rounded-full blur-[150px] -z-10"></div>
+      <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-violet-600 opacity-[0.08] rounded-full blur-[150px] -z-10"></div>
+      <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-cyan-600 opacity-[0.08] rounded-full blur-[150px] -z-10"></div>
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
         <motion.div 
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="space-y-10"
         >
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass text-blue-400 text-xs font-mono font-medium tracking-widest border-blue-500/20">
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass text-violet-400 text-xs font-mono font-medium tracking-widest border-violet-500/20">
             SYSTEM_STATUS: NOMINAL
           </div>
           
@@ -28,20 +28,20 @@ const Hero: React.FC = () => {
                 {PERSONAL_INFO.name.split(' ')[1]}
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-blue-500 font-mono font-medium flex items-center">
+            <p className="text-xl md:text-2xl text-violet-500 font-mono font-medium flex items-center">
               <span className="mr-2">&gt;</span>
               {PERSONAL_INFO.title}
             </p>
           </div>
           
           <p className="text-slate-400 text-xl max-w-lg leading-relaxed font-light">
-            Architecting <span className="text-white font-medium">high-availability</span> cloud solutions and reducing operational overhead through <span className="text-white font-medium">autonomous automation</span>.
+            Architecting <span className="text-white font-medium">high-availability</span> cloud solutions and reducing operational overhead through <span className="text-violet-400 font-medium">autonomous automation</span>.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
             <a 
               href="#projects" 
-              className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold transition-all hover:bg-blue-700 flex items-center"
+              className="px-8 py-4 bg-violet-600 text-white rounded-xl font-bold transition-all hover:bg-violet-700 flex items-center shadow-lg shadow-violet-500/20"
             >
               View Projects
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             </a>
             <a 
               href="#contact" 
-              className="px-8 py-4 glass text-white rounded-xl font-bold transition-all hover:bg-slate-800 border-slate-700"
+              className="px-8 py-4 glass text-white rounded-xl font-bold transition-all hover:bg-slate-800 border-violet-500/20"
             >
               Contact Me
             </a>
@@ -62,20 +62,20 @@ const Hero: React.FC = () => {
             <div className="bg-slate-950 rounded-3xl overflow-hidden border border-slate-800/50">
               <div className="flex items-center justify-between px-6 py-4 bg-slate-900/50 border-b border-slate-800/50">
                 <div className="flex space-x-2.5">
-                  <div className="w-3 h-3 rounded-full bg-slate-800"></div>
-                  <div className="w-3 h-3 rounded-full bg-slate-800"></div>
-                  <div className="w-3 h-3 rounded-full bg-slate-800"></div>
+                  <div className="w-3 h-3 rounded-full bg-red-500/70"></div>
+                  <div className="w-3 h-3 rounded-full bg-amber-500/70"></div>
+                  <div className="w-3 h-3 rounded-full bg-emerald-500/70"></div>
                 </div>
                 <div className="text-[10px] text-slate-600 font-mono uppercase tracking-[0.3em]">session_host.sh</div>
               </div>
               <div className="p-10 font-mono text-sm space-y-6">
                 <div className="space-y-4">
                   <div className="flex space-x-3 items-center">
-                    <span className="text-blue-500">➜</span>
+                    <span className="text-violet-500">➜</span>
                     <span className="text-emerald-400">~</span>
                     <span className="text-white">whoami --details</span>
                   </div>
-                  <div className="text-slate-500 pl-6 border-l border-slate-800 space-y-2">
+                  <div className="text-slate-500 pl-6 border-l border-violet-800/30 space-y-2">
                     <p className="flex items-center">
                       <span className="text-slate-600 mr-2">USER:</span> 
                       <span className="text-slate-300">Muhammad Khalid</span>
@@ -90,27 +90,28 @@ const Hero: React.FC = () => {
                     </p>
                     <p className="flex items-center">
                       <span className="text-slate-600 mr-2">EFFICIENCY:</span> 
-                      <span className="text-emerald-500">+50% Cost Savings</span>
+                      <span className="text-emerald-500 font-bold">+50% Cost Savings</span>
                     </p>
                   </div>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="flex space-x-3 items-center">
-                    <span className="text-blue-500">➜</span>
+                    <span className="text-violet-500">➜</span>
                     <span className="text-emerald-400">~</span>
                     <span className="text-white">k9s --namespace prod</span>
                   </div>
-                  <div className="text-emerald-500/60 pl-6 border-l border-slate-800">
-                    <p>● pod/phi-api-v1.0.4  RUNNING</p>
-                    <p>● pod/auth-service-v2  RUNNING</p>
+                  <div className="text-cyan-500/60 pl-6 border-l border-violet-800/30 font-mono text-xs">
+                    <p>● pod/phi-pos-v1.0.4  RUNNING</p>
+                    <p>● pod/naxi-ae-service  RUNNING</p>
+                    <p className="text-slate-600">○ node/aws-worker-01 READY</p>
                   </div>
                 </div>
 
                 <div className="flex">
-                  <span className="text-blue-500">➜</span>
+                  <span className="text-violet-500">➜</span>
                   <span className="text-emerald-400 ml-2">~</span>
-                  <span className="ml-2 w-2 h-5 bg-blue-500 animate-pulse"></span>
+                  <span className="ml-2 w-2 h-5 bg-violet-500 animate-pulse"></span>
                 </div>
               </div>
             </div>
