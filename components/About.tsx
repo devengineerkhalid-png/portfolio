@@ -4,7 +4,7 @@ import Section from './Section';
 import { PERSONAL_INFO } from '../constants';
 
 const About: React.FC = () => {
-  const profileImageUrl = "https://media.licdn.com/dms/image/v2/D4D03AQHYH54aCAzg9g/profile-displayphoto-scale_200_200/B4DZsP6hoMLkAY-/0/1765498560803?e=2147483647&v=beta&t=0pnoVgec1mA3FzxWPwrjZXtZsiamJJMmpx3kVf-5-hQ";
+  const profileImageUrl = "/profile.png";
 
   return (
     <Section id="about" title="Philosophy">
