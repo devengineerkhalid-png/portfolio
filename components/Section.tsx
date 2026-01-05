@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 interface SectionProps {
   id: string;
@@ -12,15 +13,30 @@ interface SectionProps {
 const Section: React.FC<SectionProps> = ({ id, title, subtitle, children, className = "" }) => {
   return (
     <section id={id} className={`py-20 px-6 max-w-7xl mx-auto ${className}`}>
-      <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 flex items-center">
-          <span className="text-blue-500 mr-2 font-mono">#</span>
-          {title}
-        </h2>
-        {subtitle && <p className="text-slate-400 max-w-2xl">{subtitle}</p>}
-        <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-emerald-500 mt-4 rounded-full"></div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.5 }}
+        className="mb-12"
+      >
+        <div className="flex items-center space-x-4 mb-4">
+          <span className="text-blue-500 font-mono text-xl">#</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            {title}
+          </h2>
+          <div className="h-px flex-grow bg-slate-800/50 ml-4"></div>
+        </div>
+        {subtitle && (
+          <p className="text-slate-400 max-w-2xl text-lg leading-relaxed font-light">
+            {subtitle}
+          </p>
+        )}
+      </motion.div>
+      
+      <div>
+        {children}
       </div>
-      {children}
     </section>
   );
 };

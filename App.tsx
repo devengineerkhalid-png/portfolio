@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,14 +11,10 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  useEffect(() => {
-    // Add intersection observer or smooth scroll logic if needed
-  }, []);
-
   return (
-    <div className="min-h-screen bg-slate-950 selection:bg-blue-500/30 selection:text-blue-200">
+    <div className="min-h-screen bg-slate-950 relative bg-grid">
       <Navbar />
-      <main>
+      <main className="relative">
         <Hero />
         <About />
         <Skills />
