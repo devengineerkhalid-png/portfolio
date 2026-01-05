@@ -16,23 +16,23 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Philosophy', href: '#about' },
+    { name: 'Core', href: '#about' },
     { name: 'Arsenal', href: '#skills' },
-    { name: 'Trajectory', href: '#experience' },
-    { name: 'Showcase', href: '#projects' },
+    { name: 'Logs', href: '#experience' },
+    { name: 'Registry', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-4' : 'py-8'}`}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className={`flex justify-between items-center transition-all duration-500 ${isScrolled ? 'glass px-8 py-3 rounded-full shadow-2xl' : ''}`}>
+        <div className={`flex justify-between items-center transition-all duration-500 ${isScrolled ? 'glass px-8 py-3 rounded-full shadow-2xl border-orange-500/20' : ''}`}>
           <motion.a 
             href="#" 
             whileHover={{ scale: 1.05 }}
             className="text-xl font-black text-white font-mono tracking-tighter"
           >
-            KHALID<span className="text-violet-500">_</span>
+            KHALID<span className="text-orange-500 font-bold">.sh</span>
           </motion.a>
 
           {/* Desktop Nav */}
@@ -44,16 +44,16 @@ const Navbar: React.FC = () => {
                 className="group relative text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href={`mailto:${PERSONAL_INFO.email}`}
-              className="px-6 py-2.5 bg-violet-600 text-white rounded-full text-xs font-black uppercase tracking-widest hover:bg-cyan-500 transition-all shadow-lg shadow-violet-500/20"
+              className="px-6 py-2.5 bg-blue-600 text-white rounded-full text-xs font-black uppercase tracking-widest hover:bg-orange-500 transition-all shadow-lg shadow-blue-600/20"
             >
-              Initialize
+              Initialize Contact
             </motion.a>
           </div>
 
@@ -80,14 +80,14 @@ const Navbar: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-x-6 top-24 z-40 md:hidden glass p-10 rounded-3xl border border-violet-500/20 shadow-2xl"
+            className="fixed inset-x-6 top-24 z-40 md:hidden glass p-10 rounded-3xl border border-orange-500/20 shadow-2xl"
           >
             <div className="flex flex-col space-y-8 items-center">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-lg font-bold uppercase tracking-[0.2em] text-slate-300 hover:text-violet-400 transition-colors"
+                  className="text-lg font-bold uppercase tracking-[0.2em] text-slate-300 hover:text-orange-400 transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
               ))}
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
-                className="w-full text-center px-8 py-4 bg-violet-600 text-white rounded-xl text-sm font-black uppercase tracking-widest"
+                className="w-full text-center px-8 py-4 bg-orange-600 text-white rounded-xl text-sm font-black uppercase tracking-widest"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Send Transmission
