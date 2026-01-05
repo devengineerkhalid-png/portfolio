@@ -3,7 +3,7 @@ import React from 'react';
 import { PERSONAL_INFO } from '../constants';
 
 const Hero: React.FC = () => {
-  const profileImageUrl = "/profile.png";
+  const profileImageUrl = "https://media.licdn.com/dms/image/v2/D4D03AQHYH54aCAzg9g/profile-displayphoto-scale_200_200/B4DZsP6hoMLkAY-/0/1765498560803?e=2147483647&v=beta&t=0pnoVgec1mA3FzxWPwrjZXtZsiamJJMmpx3kVf-5-hQ";
 
   return (
     <section className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 overflow-hidden relative">
