@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   title: "DevOps / DevSecOps Engineer",
   location: "Islamabad",
   email: "dev.engineerkhalid@gmail.com",
-  linkedin: "https://www.linkedin.com/in/engr-muhammad-khalid-675a61266/",
+  linkedin: "https://www.linkedin.com/in/engr-muhammad-khalid-%F0%9F%87%B5%F0%9F%87%B0-675a61266",
   fiverr: "https://www.fiverr.com/s/8z3yRWp",
   tagline: "Architecting resilient, secure, and cost-optimized cloud infrastructure.",
   summary: "Highly skilled DevOps/DevSecOps Engineer with a focus on AWS architecture and automation. Expert at reducing cloud costs (30–50%) and implementing robust CI/CD pipelines. Lead Engineer for complex POS deployments and cloud migrations."
