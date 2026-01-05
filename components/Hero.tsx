@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../constants';
 
 const Hero: React.FC = () => {
@@ -11,7 +12,12 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-emerald-600/10 rounded-full blur-[120px]"></div>
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
-        <div className="space-y-8">
+        <motion.div 
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="space-y-8"
+        >
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-emerald-400 text-xs font-mono font-medium tracking-wider">
             <span className="relative flex h-2 w-2 mr-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -35,22 +41,31 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a 
+            <motion.a 
+              whileHover={{ scale: 1.05, y: -4 }}
+              whileTap={{ scale: 0.95 }}
               href="#projects" 
-              className="px-8 py-4 bg-white text-slate-950 hover:bg-blue-400 rounded-lg font-bold transition-all shadow-xl shadow-blue-500/10 hover:-translate-y-1"
+              className="px-8 py-4 bg-white text-slate-950 hover:bg-blue-400 rounded-lg font-bold transition-all shadow-xl shadow-blue-500/10"
             >
               Launch Projects
-            </a>
-            <a 
+            </motion.a>
+            <motion.a 
+              whileHover={{ scale: 1.05, y: -4 }}
+              whileTap={{ scale: 0.95 }}
               href="#contact" 
-              className="px-8 py-4 bg-slate-900 text-white border border-slate-800 hover:border-slate-600 rounded-lg font-bold transition-all hover:-translate-y-1"
+              className="px-8 py-4 bg-slate-900 text-white border border-slate-800 hover:border-slate-600 rounded-lg font-bold transition-all"
             >
               Establish Connection
-            </a>
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="hidden lg:block relative">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="hidden lg:block relative"
+        >
           <div className="p-0.5 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-950 shadow-2xl">
             <div className="bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
               <div className="flex items-center justify-between px-5 py-3 bg-slate-900 border-b border-slate-800">
@@ -100,7 +115,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

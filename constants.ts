@@ -4,7 +4,7 @@ import { SkillCategory, Project, Experience, Certification } from './types';
 export const PERSONAL_INFO = {
   name: "Muhammad Khalid",
   title: "DevOps / DevSecOps Engineer",
-  location: "Peshawar, Pakistan",
+  location: "Islamabad",
   email: "softengr.ks@gmail.com",
   linkedin: "https://www.linkedin.com/in/engr-muhammad-khalid-675a61266/",
   tagline: "Architecting resilient, secure, and cost-optimized cloud infrastructure.",
@@ -67,7 +67,7 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "Phi Horizon Tech And Services PVT LTD",
     title: "DevOps / AWS Hybrid Lead",
-    location: "Peshawar, Pakistan",
+    location: "Islamabad",
     period: "Nov 2025 - Present",
     description: [
       "Designing multi-region AWS architectures for Next.js & Nest.js microservices.",
